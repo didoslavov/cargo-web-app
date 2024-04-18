@@ -3,17 +3,17 @@ import { BiEnvelope } from 'react-icons/bi';
 
 function Form() {
     return (
-        <form action="POST" className="mt-[48px] w-full">
+        <form action="POST" className="flex items-center justify-center mt-10 md:mt-[48px] w-full">
+            <div className="py-3 md:py-[24px] bg-white px-4 md:px-[20px] rounded-l-md">
+                <BiEnvelope width={16} height={16} className="text-2xl text-dark-blue-400" />
+            </div>
             <label htmlFor="phone" className="text-dark-blue-400 relative">
-                <div className="flex items-center gap-[10px] absolute top-[50%] -translate-y-[50%] left-[20px]">
-                    <BiEnvelope width={16} height={16} />
-                    <span className="text-[16px] leading-[24px] -tracking-[0.3px] ">Мобилен телефон</span>
-                </div>
                 <input
                     type="text"
                     name="phone"
                     id="phone"
-                    className="outline-none focus:outline-cta-green py-3 md:py-[24px] px-4 md:px-[20px] rounded-l-md w-[40%]"
+                    placeholder="Мобилен телефон"
+                    className="outline-none -outline-offset-2 focus:outline-cta-green py-3 md:py-[24px] px-4 md:px-[20px]"
                 />
             </label>
             <input

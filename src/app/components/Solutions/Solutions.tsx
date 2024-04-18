@@ -11,11 +11,11 @@ function Solutions() {
     ];
 
     return (
-        <article className="text-dark-blue flex items-center justify-center flex-col mb-11 md:mb-[100px] w-[80%] xl:items-start lg:ps-32">
-            <h2 className="text-xl xl:self-start font-grotesk font-semibold lg:text-[48px] xl:leading-[115%] -tracking-[2px] mt-11 md:mt-[100px] mb-[62px]">
+        <article className="text-dark-blue flex items-center justify-center flex-col mb-11 md:mb-[100px] w-[70%] xl:items-start">
+            <h2 className="text-2xl xl:self-start font-grotesk font-semibold lg:text-[48px] xl:leading-[115%] -tracking-[2px] mt-11 md:mt-[100px] mb-12 lg:mb-[62px]">
                 Други услуги
             </h2>
-            <div className="flex flex-col md:flex-row gap-[24px]">
+            <div className="flex flex-col gap-8 lg:flex-row lg:gap-[24px] md:justify-center xl:justify-start md:w-full">
                 {services.map((s, i) => (
                     <Card key={i} src={s.src} heading={s.heading} alt={s.alt} />
                 ))}
