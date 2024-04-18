@@ -1,29 +1,15 @@
 import React from 'react';
+import NavItem from './NavItem';
 
 function Nav() {
+    const navItems = ['Начало', 'За нас', 'Услуги', 'Цени', 'Как работи', 'Контакти'];
+
     return (
         <nav>
             <ul className="flex items-center gap-[40px] font-medium text-dark-blue-800 text-[16px] tracking-[0px] leading-[170%]">
-                <li>
-                    <a href="#" className="text-dark-blue-900">
-                        Начало
-                    </a>
-                </li>
-                <li>
-                    <a href="#">За нас</a>
-                </li>
-                <li>
-                    <a href="#">Услуги</a>
-                </li>
-                <li>
-                    <a href="#">Цени</a>
-                </li>
-                <li>
-                    <a href="#">Как работи</a>
-                </li>
-                <li>
-                    <a href="#">Контакти</a>
-                </li>
+                {navItems.map((item, i) => (
+                    <NavItem key={i}>{item}</NavItem>
+                ))}
             </ul>
         </nav>
     );
