@@ -9,12 +9,12 @@ function Form() {
                     <BiEnvelope width={16} height={16} />
                     <span className="text-[16px] leading-[24px] -tracking-[0.3px] ">Мобилен телефон</span>
                 </div>
-                <input type="text" name="phone" id="phone" className="py-[24px] px-[20px] rounded-l-md w-[40%]" />
+                <input type="text" name="phone" id="phone" className="py-3 md:py-[24px] px-4 md:px-[20px] rounded-l-md w-[40%]" />
             </label>
             <input
                 type="submit"
                 value="Изпрати"
-                className="py-[24px] px-[36px] font-semibold text-[16px] leading-[24px] -tracking-[0.3px] text-dark-blue-900 bg-cta-green rounded-r-md"
+                className="py-3 md:py-[24px] px-4 md:px-[36px] font-semibold text-[16px] leading-[24px] -tracking-[0.3px] text-dark-blue-900 bg-cta-green rounded-r-md"
             />
         </form>
     );
