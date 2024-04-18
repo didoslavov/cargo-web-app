@@ -1,8 +1,6 @@
-import React from 'react';
-
-function Actions() {
+function Actions({ className }: { className: string }) {
     return (
-        <div className="text-[16px] tracking-[0px] leading-[170%] flex gap-9 items-center">
+        <div className={`text-[16px] tracking-[0px] leading-[170%] ${className}`}>
             <a href="#" className="font-medium">
                 Профил
             </a>
