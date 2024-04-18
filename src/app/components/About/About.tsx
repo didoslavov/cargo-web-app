@@ -4,7 +4,7 @@ import Pros from './Pros';
 
 function About() {
     return (
-        <section className="w-[40%] text-dark-blue">
+        <section className="w-[70%] 2xl:w-[40%] text-dark-blue">
             <Agenda />
             <Pros />
         </section>
