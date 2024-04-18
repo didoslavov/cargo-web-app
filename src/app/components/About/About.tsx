@@ -1,14 +1,13 @@
-import React from 'react';
-import Agenda from './Agenda';
-import Pros from './Pros';
+import Agenda from "./Agenda";
+import Pros from "./Pros";
 
 function About() {
-    return (
-        <section className="w-[70%] 2xl:w-[40%] text-dark-blue">
-            <Agenda />
-            <Pros />
-        </section>
-    );
+  return (
+    <section className="w-[70%] text-dark-blue 2xl:w-[40%]">
+      <Agenda />
+      <Pros />
+    </section>
+  );
 }
 
 export default About;

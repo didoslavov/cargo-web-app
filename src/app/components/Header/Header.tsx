@@ -1,23 +1,28 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Nav from './Nav';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { useState } from "react";
+import Nav from "./Nav";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const toggleMobile = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+  const toggleMobile = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
-    return (
-        <header className="flex items-center justify-between w-[90%] xl:w-[85%] text-dark-blue lg:mt-8 py-4">
-            <div className="text-[29.65px] leading-[140%] -tracking-[0.62px] font-bold font-grotesk">Website</div>
-            <Nav isMobileMenuOpen={isMobileMenuOpen} toggleMobile={toggleMobile} />
-            <RxHamburgerMenu onClick={toggleMobile} className="text-4xl lg:hidden cursor-pointer" />
-        </header>
-    );
+  return (
+    <header className="flex w-[90%] items-center justify-between py-4 text-dark-blue lg:mt-8 xl:w-[85%]">
+      <div className="font-grotesk text-[29.65px] font-bold leading-[140%] -tracking-[0.62px]">
+        Website
+      </div>
+      <Nav isMobileMenuOpen={isMobileMenuOpen} toggleMobile={toggleMobile} />
+      <RxHamburgerMenu
+        onClick={toggleMobile}
+        className="cursor-pointer text-4xl lg:hidden"
+      />
+    </header>
+  );
 }
 
 export default Header;
