@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Hero from './components/Hero/Hero';
+import Cta from './components/Cta/Cta';
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
             <Header />
             <Hero />
             <About />
+            <Cta />
         </main>
     );
 }
