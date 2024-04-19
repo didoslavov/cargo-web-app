@@ -66,12 +66,8 @@ function Form() {
         onSubmit={handleSubmit}
         className="mt-10 flex w-full items-center justify-center md:mt-[48px]"
       >
-        <div className="rounded-l-md bg-white px-4 py-3 md:px-[20px] md:py-[24px]">
-          <BiEnvelope
-            width={16}
-            height={16}
-            className="text-2xl text-dark-blue-400"
-          />
+        <div className="rounded-l-md bg-white px-4 py-3 md:px-[20px] md:py-[28px] md:pe-3">
+          <BiEnvelope size={16} className="text-2xl text-dark-blue-400" />
         </div>
         <label htmlFor="phone" className="relative text-dark-blue-400">
           <input
@@ -79,7 +75,7 @@ function Form() {
             name="phone"
             id="phone"
             placeholder="Мобилен телефон"
-            className="px-4 py-3 outline-none -outline-offset-2 focus:outline-cta-green md:px-[20px] md:py-[24px]"
+            className="px-4 py-3 outline-none -outline-offset-2 placeholder:ml-10 placeholder:leading-6 placeholder:-tracking-[0.3px] placeholder:text-dark-blue-400 focus:outline-2 focus:outline-cta-green md:px-[20px] md:py-[24px] md:ps-1"
             onChange={onPhoneChange}
             value={phone}
           />
