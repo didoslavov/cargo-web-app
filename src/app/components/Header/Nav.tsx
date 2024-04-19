@@ -32,7 +32,7 @@ function Nav({
       ) : (
         <div className="fixed right-0 top-0 z-50 flex h-screen w-screen flex-col justify-center  gap-16 bg-main-white ps-10 transition-all lg:hidden">
           <IoMdClose
-            className="absolute right-8 top-14 cursor-pointer text-4xl"
+            className="absolute right-4 top-5 cursor-pointer text-4xl"
             onClick={toggleMobile}
           />
           <ul className="flex flex-col gap-6 font-bold">
