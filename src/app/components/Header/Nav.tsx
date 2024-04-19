@@ -22,7 +22,7 @@ function Nav({
     <>
       {!isMobileMenuOpen ? (
         <nav className="flex gap-14 xl:gap-44">
-          <ul className="hidden items-center text-[16px] font-medium leading-[170%] tracking-[0px] text-dark-blue-800 lg:gap-[40px] xl:flex">
+          <ul className="hidden items-center text-[16px] font-medium leading-[170%] tracking-[0px] text-dark-blue-800 md:flex lg:gap-[40px]">
             {navItems.map((item, i) => (
               <NavItem key={i}>{item}</NavItem>
             ))}
